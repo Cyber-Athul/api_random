@@ -1,0 +1,6 @@
+db.js is the database schema and a ample MySQL connection.
+schema.sql is the schema for the assignment and feedback tables.
+iSubmitService.js is the service implementation of two operations, which are, Submit and getFeedback.
+api.js is the REST API using express.
+
+In this implementation, we are using Express to create the REST API and Multer to handle the file uploads.

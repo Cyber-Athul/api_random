@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS Assignment (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  studentId VARCHAR(255) NOT NULL,
+  assignmentName VARCHAR(255) NOT NULL,
+  url VARCHAR(2048) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Feedback (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  assignmentId INT NOT NULL,
+  content TEXT NOT NULL,
+  FOREIGN KEY (assignmentId) REFERENCES Assignment(id)
+);
